@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/8e50f3cebe.js" crossorigin="anonymous"></script>
+    <style>
+        .tab-links {
+            background-color: gray;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.4s;
+        }
+
+        .tab-links::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transition: right 0.4s;
+            z-index: -1;
+        }
+
+        .tab-links:hover::before {
+            right: 0;
+        }
+
+        .tab-links:hover {
+            color: red;
+        }
+
+        .active-link {
+            background-color: white;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="balajishadow.jpg" class="logo" alt="balajishadow">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Interests</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>OPEN FOR INETRNSHIPS </p>
+                <h1>Hi! I'm <span>Balaji</span><br>Aspiring Young CS student</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="balajispeech.jpg.jpg" alt="Balaji Speech">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <br>
+                <p>I'm Balaji Bsc.computer science student who looking for oppetuninty to growing up the social ladder and currently learning front end development in by my myself to land a job as a fornt end developer also learnig full stack development in udemy so the odds are i will not be bambarded by any back end development too.</p>
+            <div class="tab-titles">
+                <button class="tab-links active-link" onclick="opentab('skills')" onKeyPress="opentab('skills')">Skills</button>
+                <button class="tab-links" onclick="opentab('experience')" onKeyPress="opentab('experience')">Experience</button>
+                <button class="tab-links" onclick="opentab('education')" onKeyPress="opentab('education')">Education</button>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web interfaces </li>
+                    <li><span>Web Development</span><br>Learning front end tools to develop web applications </li>
+                    <li><span>Communication</span><br>Speech,presentation,effective communication </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Hosting</span><br>Hosted several events in college </li>
+                    <li><span>Communication</span><br>Participated often in speech and ppt presentaion competition  </li>
+                    <li><span>Productive Hobbies</span><br>Reading books on self improvement and also ficton of classical history in philosophical context</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2015</span><br>Schooled in Nanjappa</li>
+                    <li><span>2023</span><br>Joined college at sasurie college of arts and science </li>
+                    <li><span>2025</span><br>Doing a internship course in Edvedha </li>
+                </ul>
+            </div>
+            </div>
+           </div> 
+        </div>
+
+    </div>
+    <hr>
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Inetersts </h1>
+        <div class="interests-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Web development</h1>
+                <p>Intereseted in web development for a long time since 2020. Learning HTML,CSS,JAVASCRIPT,PYHTON.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h1>Tech updates</h1>
+                <p>Very much involved in tech products and as tech enthusiasts im constantly following apple and google key notes and developer meet ups for the upcoming new technology talks. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-trophy"></i>
+                <h1>Leadership & <br>Marketing </h1>
+                <p>Fond of Communication and as invloved in many occasions i got to know many wisdom from poeple i look forward to and surround myslelf with.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Accomplishment  </h1>
+        <div class="ackomplishment-list">
+            <div class="work">
+                <img src="clubvp.jpg" alt="clubvp">
+                <div class="layer">
+                    <h2>Club's <br>Vice President</h2>
+                    <p>As a vice president of the club i have to manage the club and also have to host the events and also have to manage the club's social media accounts.</p>                </div>
+            </div>
+            <div class="work">
+                <img src="certificate.jpg" alt="certificate">
+                <div class="layer">
+                    <h2>Learning<br>certificates</h2>
+                    <p>Spend time on learing new skills every now and then </p>                </div>
+            </div>
+            <div class="work">
+                <img src="balajispeech.jpg.jpg" alt="balajispeech">
+                <div class="layer">
+                    <h2>Speech <br>Competition</h2>
+                    <p>Participated in many speech competition and also won many of them and also hosted many events in college.</p>                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>madhanbalaji82203@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9894310067</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/R__Balaji03"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="www.linkedin.com/in/balaji-r-31085b2a4
+
+                    "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61554855125274&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="Balaji_.r_sume.pdf" download class="btn btn2">Downlad CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<hr>
+<div class="copyright">
+    <p>Copyright @Balaji. made it on 2025</p>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+</body>
+</html>
