@@ -4,6 +4,10 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+
+}
 body{
     background: black;
     color: #fff;
@@ -53,11 +57,11 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
+    transition: 0.5s;
 
 }
 nav ul li a:hover::after{
     width: 100%;
-    transition: 0.5s;
 
 }
 .header-text{
@@ -301,11 +305,12 @@ form .btn2{
     }
     .header-text{
         margin-top: 100%;
+    }
     .header-text h1{
         font-size: 30px;
-
     }
-    nav .fa-solid{
+
+    nav .fas{
         display: block;
         font-size: 25px;
 
@@ -314,18 +319,23 @@ form .btn2{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
     }
-    nav ul .fa-solid{
+    nav ul li{
+        display: block;
+        margin: 25px;
+        
+    }
+    nav ul .fas{
         position: absolute;
         top: 25px;
-        right: 20px;
+        right: 25px;
         cursor: pointer;
     }
 
 
-}
 }
